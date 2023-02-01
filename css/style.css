@@ -183,6 +183,7 @@ form {
     font-weight: 400;
     background-color: rgba(255, 255, 255, 0.764);
     transition: .5s;
+    max-width: 50%;
 }
 
 #sortImages:hover {
@@ -191,8 +192,6 @@ form {
 
 
 /* RADIO OPTIONS */
-
-
 
 .radioContainer {
     position: absolute;
@@ -314,6 +313,57 @@ form button:hover{
     behavior: "smooth";
   }
   
+
+  @media only screen and (max-width: 1060px){
+
+    /* TEXT */
+    .textContainer { 
+        top: 38%;
+        left: 50%; 
+        transform: translate(-50%, -62%);
+    }
+
+    .textContainer h1{
+        font-size: 80px;
+        letter-spacing: 15px;
+    }
+
+    
+    .textContainer p {
+        font-size: 12px;
+        margin-top: -110px;
+        margin-left: 270px;
+    }
+
+
+    /* FORM */
+
+
+    form {
+        top: 65%;
+        transform: translate(-50%, -35%);
+        min-width: 75%;
+    }
+    
+    .inputContainer {
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%, -90%);
+        width: 80%;
+    }
+
+     /* SEARCHBAR */
+    
+    #searchInput {
+        height: 30px;
+    }  
+    
+    /* DROPDOWN */
+
+    .dropDownContainer {
+        height: 32px;
+    }
+  }
 
 
 
