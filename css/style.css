@@ -293,7 +293,7 @@ form button:hover{
     left: 51%;
     transform: translate(-49%, 0);
     display: none;
-    background-image: url(/images/arrowTop/arrow2.png);
+    background-image: url(../images/arrowTop/arrow2.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
