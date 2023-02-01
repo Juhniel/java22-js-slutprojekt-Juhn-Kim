@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+    <title>JFlickr</title>
+</head>
+<body>
+
+    <div class="slideShowContainer">
+        <div class="textContainer">
+            <h1>flick <span>r</span></h1>
+            <p><a href="https://juhnkim.com/">by J</a></p>
+        </div>
+        <figure>
+            <img src="./images/backgrounds/background.jpg" alt="">
+            <img src="./images/backgrounds/background2.jpg" alt="">
+            <img src="./images/backgrounds/background3.jpg" alt="">
+            <img src="./images/backgrounds/background4.jpg" alt="">
+            <img src="./images/backgrounds/background.jpg" alt="">
+        </figure>
+    </div>
+
+    <form>
+        <div class="inputContainer">
+                <input type="text" name="searchInput" id="searchInput" placeholder="Search for any images.." onfocus="this.placeholder=''" onfocusout="this.placeholder='Search for any images'">
+            <div class="dropDownContainer">
+                <select class="sortContainer" id="sortImages">
+                    <option value="relevance">Relevant</option>
+                    <option value="date-posted-desc">Most Recent</option>
+                    <option value="interestingness-desc">Interestingness</option>
+                </select>
+                <select id="dropDownImgAmount">
+                    <option value="1">1</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="70">75</option>
+                    <option value="100">100</option>
+                </select>
+            </div>
+        </div>
+        <div class="radioContainer" id="radioContainer">
+            <input type="radio" id="sizeRadioImgSmall" name="imgSize" value="q" checked="checked">
+            <label for="sizeRadioImgSmall">Small</label>
+            <input type="radio" id="sizeRadioImgMedium" name="imgSize" value="m">
+            <label for="sizeRadioImgMedium">Medium</label>
+            <input type="radio" id="sizeRadioImgLarge" name="imgSize" value="z"> 
+            <label for="sizeRadioImgLarge">Large</label>
+        </div>
+        <button type="submit">Search</button>
+    </form>
+
+    <h1 id="errorMsgH1"></h1>
+    
+    <div class="grid" id="imageContainer">
+    </div>
+
+    <button id="scrollToTopButton"></button>
+</body>
+</html>
