@@ -1,7 +1,7 @@
-
 const imageContainer = document.querySelector("#imageContainer");
 const searchButton = document.querySelector("button");
 let errorMsgH1 = document.querySelector("#errorMsgH1");
+
 document.body.append(errorMsgH1);
 
 searchButton.addEventListener("click", getUserInput);
@@ -19,7 +19,6 @@ function getUserInput(event){
     // Checks first if the searchInput has any value
     // If there is a value --> fetch
     // check if response status is between 200-299 
-   
     function getFlickrImages(searchInputValue, imagePerPageValue, sortImagesValue) {
         searchInputValue = formatSearchInput(searchInputValue);
         const flickrURL = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=e43da4908cf522366dcc1b1b0d90a856&text=${searchInputValue}&per_page=${imagePerPageValue}&page=1&sort=${sortImagesValue}&format=json&nojsoncallback=1`;
@@ -85,7 +84,6 @@ window.onscroll = function() {
         scrollToTopButton.classList.remove("show");
     }
   };
-
 
 // Scrolls all the way to the top if user clicks button.
   scrollToTopButton.addEventListener("click", ()=> {
